@@ -12,11 +12,11 @@ Date::Holidays::CZ - determine Czech Republic bank holidays
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 SYNOPSIS
 
@@ -151,7 +151,7 @@ This module contains two functions that can be exported:
 =cut
 
 
-use parent qw(Exporter);
+use base qw(Exporter);
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(is_cz_holiday cz_holidays);
 

@@ -1,5 +1,6 @@
 Revision history for Date-Holidays-CZ
 
+0.05 Change 'use parent' to 'use base' for compatibility with 5.010
 0.04 Add detailed workflow to README.packaging
 0.03 Correct error in SYNOPSIS 
 0.02 Up version number to get rid of warning
