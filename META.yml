@@ -23,4 +23,4 @@ requires:
   Date::Simple: 0
   Exporter: 0
   perl: 5.01
-version: 0.03
+version: 0.04

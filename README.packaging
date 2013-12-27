@@ -1,3 +1,64 @@
 This software is packaged by the author using the openSUSE Build Service:
 https://build.opensuse.org/package/show/devel:languages:perl/perl-Date-Holidays-CZ
 
+Release workflow
+================
+
+Releasing involves:
+
+1. making changes in local git working directory
+2. pushing the changes to sourceforge
+3. pushing the changes to CPAN
+4. pushing the changes to the openSUSE Build Service
+
+
+Make changes in local git 
+-------------------------
+
+1. make changes
+2. test changes
+3. increment version number in CZ.pm and perl-Date-Holidays-CZ.spec
+4. log change to Changes file
+5. git status, git add, git commit
+
+
+Push changes to sourceforge
+---------------------------
+
+1. git remote -v
+2. git push
+
+
+Push changes to CPAN
+--------------------
+
+1. verify that we are in local git working directory
+2. rsync -av --files-from=MANIFEST . ~/tmp/Date-Holiday-CZ/
+3. cd ~/tmp/Date-Holiday-CZ/
+4. perl Makefile.PL
+5. make test
+6. review test results
+7. if all green, make dist
+8. upload resulting file to PAUSE via this web page:
+   https://pause.perl.org/pause/authenquery?ACTION=add_uri
+
+
+Push changes to openSUSE Build Service
+--------------------------------------
+
+1. make sure version number in perl-Date-Holidays-CZ.spec is correct
+2. make sure we have cloned devel:languages:perl/perl-Date-Holidays-CZ from OBS
+3. cp ~/tmp/Date-Holiday-CZ/Date-Holidays-CZ-[VERSION_NUM].tar.gz ~/devel:languages:perl/perl-Date-Holidays-CZ/
+4. cp perl-Date-Holiday-CZ.spec perl-Date-Holiday-CZ.changes ~/devel:languages:perl/perl-Date-Holidays-CZ/
+5. cd ~/devel:languages:perl/perl-Date-Holidays-CZ/
+6. oosc build openSUSE-13.1 x86_86 (e.g.)
+7. review spec file (version number)
+8. less Changes (copy latest changes)
+9. oosc vc (paste latest changes)
+10. oosc ci
+11. wait for OBS to publish the new version
+12. make sure you have devel:languages:perl as an active repo in /etc/zypp/repos.d
+13. zypper ref devel_languages_perl
+14. zypper up perl-Date-Holidays-CZ
+
+
