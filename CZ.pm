@@ -1,6 +1,6 @@
 package Date::Holidays::CZ;
 
-use 5.010;
+use 5.10.0;
 use strict;
 use warnings FATAL => 'all';
 
@@ -12,11 +12,11 @@ Date::Holidays::CZ - determine Czech Republic bank holidays
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 SYNOPSIS
 
@@ -151,8 +151,7 @@ This module contains two functions that can be exported:
 =cut
 
 
-use base qw(Exporter);
-our @ISA = qw(Exporter);
+use Exporter qw(import);
 our @EXPORT_OK = qw(is_cz_holiday cz_holidays);
 
 

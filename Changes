@@ -1,5 +1,9 @@
 Revision history for Date-Holidays-CZ
 
+0.06 - Simplify use of Exporter (neither 'use parent', nor 'use base' is required)
+     - Uncomment tests in t/01-code-paces.t
+     - Get rid of pod.t because it demands a 'lib' directory in the
+       distribution
 0.05 Change 'use parent' to 'use base' for compatibility with 5.010
 0.04 Add detailed workflow to README.packaging
 0.03 Correct error in SYNOPSIS 
