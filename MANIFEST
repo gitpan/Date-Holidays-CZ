@@ -2,6 +2,7 @@ Changes
 CZ.pm
 Makefile.PL
 MANIFEST
+perl-Date-Holidays-CZ.spec
 README
 README.packaging
 t/00-load.t

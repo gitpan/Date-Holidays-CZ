@@ -12,11 +12,11 @@ Date::Holidays::CZ - determine Czech Republic bank holidays
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 SYNOPSIS
 
@@ -284,44 +284,14 @@ Please report any bugs or feature requests to C<bug-date-holidays-cz at rt.cpan.
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Date-Holidays-CZ>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Date::Holidays::CZ
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-CZ>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Date-Holidays-CZ>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Date-Holidays-CZ>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Date-Holidays-CZ/>
-
-=back
-
-
 =head1 ACKNOWLEDGEMENTS
 
 Inspired by Date::Holidays::DK
 
-
 =head1 LICENSE AND COPYRIGHT
 
 Copyright 2013-2014 SUSE LLC
+
 Author: Nathan Cutler
 
 This program is free software; you can redistribute it and/or modify it
@@ -364,18 +334,3 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
 
 1; # End of Date::Holidays::CZ
-
-
-=head1 AUTHOR
-
-C<< Nathan Cutler <presnypreklad@gmail.com> >>
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2013-2014 SUSE LLC
-
-C<Date::Holidays::CZ> is released under the Artistic License, as
-specified by the Artistic file in the standard Perl distribution
-(L<http://dev.perl.org/licenses/artistic.html>)
-
-=cut
