@@ -12,15 +12,15 @@ Date::Holidays::CZ - determine Czech Republic bank holidays
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
-   use Date::Holidays::CZ;
+   use Date::Holidays::CZ qw(is_cz_holiday cz_holidays);
    my ($year, $month, $day) = (localtime)[ 5, 4, 3 ];
        
    $year  += 1900;
